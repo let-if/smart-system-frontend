@@ -1,0 +1,88 @@
+.div2 {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 30px 25px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.div2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+}
+
+.h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.profile-image {
+  width: 150px;             /* slightly bigger */
+  height: 150px;            /* same as width to make perfect circle */
+  border-radius: 50%;       /* ensures circular shape */
+  object-fit: cover;        /* image covers the circle without stretching */
+  border: 5px solid #fff;   /* nice white border */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45); /* deeper shadow for wow effect */
+  margin-bottom: 25px;
+  display: block;           /* prevents inline issues */
+  margin-left: auto;        /* center horizontally */
+  margin-right: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.profile-form .input {
+  width: 80%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-form .input:focus {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.profile-form .button {
+  width: 60%;
+  padding: 12px;
+  background: #fff;
+  color: #2575fc;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.profile-form .button:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.success-message {
+  color: #ffeb3b;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+}

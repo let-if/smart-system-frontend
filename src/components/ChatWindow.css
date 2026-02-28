@@ -1,0 +1,220 @@
+/* ChatWindow.css - fully scoped under .chat-overlay */
+.chat-overlay {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 470px;
+  background-color: #0b0303;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Top header */
+.chat-overlay .div2 {
+  height: 45px;
+  background: linear-gradient(90deg, #ff4e50, #f9d423);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Bot avatar in header */
+.chat-overlay .bot-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  color: #ff4e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Chat messages container */
+.chat-overlay .chat-messages {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  background-color: #120606;
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+}
+
+/* Individual messages */
+.chat-overlay .message {
+  display: flex;
+  align-items: flex-end;
+  margin: 5px 0;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+/* User messages (right) */
+.chat-overlay .message.user {
+  justify-content: flex-end;
+}
+
+.chat-overlay .message.user .msg-text {
+  background-color: #262626;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px 20px 5px 20px;
+}
+
+/* Bot messages (left) */
+.chat-overlay .message.bot {
+  justify-content: flex-start;
+}
+
+.chat-overlay .message.bot .msg-text {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 20px 20px 20px 5px;
+}
+
+/* Info messages */
+.chat-overlay .message.info-msg {
+  justify-content: center;
+}
+
+.chat-overlay .message.info-msg .info-text {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+}
+
+/* Avatar */
+.chat-overlay .message .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+/* Message text + time */
+.chat-overlay .msg-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.chat-overlay .msg-time {
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 2px;
+  text-align: right;
+}
+
+.chat-overlay .msg-status {
+  font-size: 10px;
+  color: #aaa;
+  margin-left: 5px;
+}
+
+/* Bottom input area */
+.chat-overlay .div3 {
+  padding: 10px;
+  background-color: #0b0303;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.chat-overlay .chat-form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Icons */
+.chat-overlay .icon {
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.chat-overlay .icon:hover {
+  color: white;
+}
+
+/* Message input */
+.chat-overlay .message-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background-color: #1c0a0a;
+  color: white;
+}
+
+/* Send button */
+.chat-overlay .send-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background-color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: white;
+}
+
+.chat-overlay .send-btn i {
+  color: #00d8ff;
+  font-size: 16px;
+}
+
+.chat-overlay .send-btn:hover {
+  background-color: #333;
+}
+
+/* Emoji picker container */
+.chat-overlay .emoji-picker-container {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  right: 10px;
+  background-color: #222;
+  padding: 8px;
+  border-radius: 10px;
+  max-height: 120px;
+  overflow-y: auto;
+  z-index: 1001;
+}
+
+/* Scrollbar styling for chat messages */
+.chat-overlay .chat-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-overlay .chat-messages::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 3px;
+}

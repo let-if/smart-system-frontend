@@ -1,0 +1,119 @@
+.assigned-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  border-radius: 15px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.assigned-container h1 {
+  text-align: center;
+  color: #00ff99;
+  margin-bottom: 30px;
+}
+
+.complaint-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.complaint-card {
+  background: #222;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
+
+.complaint-card:hover {
+  transform: scale(1.02);
+}
+
+.complaint-header {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #00ff99;
+}
+
+.complaint-body p {
+  margin: 5px 0;
+}
+
+.status-text {
+  font-weight: bold;
+}
+
+.status-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00cc77;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.status-btn:hover {
+  background-color: #00ff99;
+}
+
+.resolved-time {
+  margin-top: 8px;
+  font-size: 0.85em;
+  color: #aaa;
+}
+
+.reply-section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reply-section textarea {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 8px;
+  padding: 6px;
+  background: #111;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.remarks-history {
+  margin-top: 10px;
+  background: #111;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.remarks-history h4 {
+  margin: 0 0 5px 0;
+  color: #00ff99;
+}
+
+.remarks-history p {
+  margin: 3px 0;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+/* Status-specific borders */
+.complaint-card.open {
+  border-left: 5px solid #ff4d4d;
+}
+
+.complaint-card.in-progress {
+  border-left: 5px solid #ffb84d;
+}
+
+.complaint-card.resolved {
+  border-left: 5px solid #00cc77;
+}

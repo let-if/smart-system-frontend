@@ -1,0 +1,68 @@
+.login-simulation-container {
+  max-width: 450px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 25px;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  animation: fadeIn 1s ease-out;
+}
+
+.login-simulation-container h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 12px rgba(0,0,0,0.4);
+}
+
+.login-simulation-container select,
+.login-simulation-container button {
+  width: 90%;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.05rem;
+  outline: none;
+  transition: all 0.3s ease;
+  color: #000;            /* Make text black for visibility */
+  background-color: #fff;  /* Solid white background for inputs */
+  font-weight: 600;
+}
+
+.login-simulation-container select:hover,
+.login-simulation-container select:focus {
+  background-color: #f0f0f0;
+}
+
+.login-simulation-container button {
+  background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.login-simulation-container button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+.login-role, .login-user {
+  margin-bottom: 20px;
+}
+
+.login-role label, .login-user label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

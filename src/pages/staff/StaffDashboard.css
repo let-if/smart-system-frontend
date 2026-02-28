@@ -1,0 +1,160 @@
+.staff-dashboard-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  border-radius: 15px;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00ff99;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1 1 200px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, background 0.3s;
+  cursor: pointer;
+}
+
+.card.open {
+  background: #ff4d4d;
+}
+.card.in-progress {
+  background: #ffb84d;
+}
+.card.resolved {
+  background: #00cc77;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.progress-bar-container {
+  display: flex;
+  height: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0 25px 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.progress-bar.open {
+  background: #ff4d4d;
+}
+.progress-bar.in-progress {
+  background: #ffb84d;
+}
+.progress-bar.resolved {
+  background: #00cc77;
+}
+
+.assigned-section {
+  margin-top: 20px;
+}
+
+.ticket-card {
+  background: #262626;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ticket-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.ticket-card strong {
+  color: #00ff99;
+}
+
+.ticket-status {
+  font-weight: bold;
+}
+
+.ticket-btn {
+  margin-left: 15px;
+  padding: 6px 12px;
+  background: #00ff99;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.ticket-btn:hover {
+  background: #00cc77;
+  transform: scale(1.05);
+}
+
+.resolved-time {
+  font-size: 12px;
+  margin-top: 6px;
+  color: #aaaaaa;
+}
+
+.view-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #00ff99;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: background 0.3s;
+}
+
+.view-link:hover {
+  background: rgba(0, 255, 153, 0.2);
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #00cc77;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px);}
+  10% { opacity: 1; transform: translateY(0);}
+  90% { opacity: 1; transform: translateY(0);}
+  100% { opacity: 0; transform: translateY(-10px);}
+}

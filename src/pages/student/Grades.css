@@ -1,0 +1,77 @@
+/* Container */
+.grades-container {
+  max-width: 1000px; /* wider for more columns */
+  margin: 50px auto;
+  padding: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+
+.grades-container h1 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+/* Wrapper to allow horizontal scroll on small screens */
+.grades-wrapper {
+  overflow-x: auto;
+}
+
+/* Table */
+.grades-table {
+  width: 100%;
+  min-width: 700px; /* ensures table doesn't shrink too small */
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.grades-table th,
+.grades-table td {
+  padding: 12px 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.grades-table thead th {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-weight: bold;
+  position: sticky;
+  top: 0; /* keeps header visible on scroll */
+  z-index: 1;
+}
+
+.grades-table tbody tr {
+  background: rgba(255,255,255,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  border-radius: 12px;
+  display: table-row;
+}
+
+.grades-table tbody tr:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-3px);
+}
+
+.grades-table tbody td {
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grades-table th, .grades-table td {
+    padding: 10px 6px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .grades-table {
+    min-width: 600px; /* still scrollable horizontally */
+  }
+}
