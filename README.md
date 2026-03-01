@@ -184,10 +184,10 @@ This project is developed as a **Frontend University Project** demonstrating:
 
 # 👨‍💻 Developer
 
-Your Name  
+Abdulletif ylkal 
 Adama Science and Technology University (ASTU)  
-Department / Program  
-Year
+Software Engineering  
+3rd year
 
 ---
 
