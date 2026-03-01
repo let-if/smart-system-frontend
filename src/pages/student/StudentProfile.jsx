@@ -35,7 +35,7 @@ function StudentProfile() {
 
       {/* Profile Image */}
       <img
-        src="/profile.jpg" // Replace with actual image path
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcluavCz2kjI2oQhPG4AXpzl3RzWGPe4ffwA&s" // Replace with actual image path
         alt="Profile"
         className="profile-image"
       />
